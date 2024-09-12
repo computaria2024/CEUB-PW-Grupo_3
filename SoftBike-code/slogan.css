@@ -79,7 +79,7 @@
 .linha-horizontal {
     border: none; /* Remove a borda padrão */
     border-top: 1px solid black; /* Espessura e cor da linha */
-    width: 50%; /* Largura da linha (ajuste conforme necessário) */
+    width: 80%; /* Largura da linha (ajuste conforme necessário) */
     margin: 0 auto; /* Centraliza horizontalmente */
   }
   
@@ -315,41 +315,52 @@
     transform: translate3d(-50%,0,0);
   }
 }                
-
-/* Estilos para as informações de pagamento */
+/* Informações de pagamento */
 .info-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Alinha os elementos no centro horizontalmente */
+  align-items: center;
+  gap: 20px; /* Espaçamento entre o cartão e as informações de pagamento */
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 auto; /* Centraliza o container na página */
+  width: 100%; /* Garante que o container ocupe toda a largura */
 }
 
 .card-info {
-    flex: 1;
+  flex: 1;
 }
 
 .payment-info {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    gap: 10px;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  gap: 5px;
+  justify-content: center; /* Alinha os elementos no centro horizontalmente */
+  margin: 0 auto; /* Centraliza o container na página */
+  width: 100%; /* Garante que o container ocupe toda a largura */
+  /*flex-direction: column; Colocar os itens em coluna */
+
 }
 
 .info-text {
-    font-weight: bold;
-    color: #000;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .divider {
-    color: #ccc;
-    font-size: 1.2em;
+  color: #ccc;
+  font-size: 1.2em;
 }
 
 .info-extra {
-    display: block;
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 4px;
+  display: block;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 4px;
+  text-align: center; 
 }
+ 
