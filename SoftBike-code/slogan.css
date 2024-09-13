@@ -14,6 +14,7 @@
     justify-content: flex-end;
     background-color: black;
     padding: 10px;
+    
 }
 
 .social-menu a {
@@ -21,21 +22,26 @@
     margin-left: 15px;
     text-decoration: none;
     font-size: 1.5em;
+    margin-right: 10px;
 }
 
 .social-menu a.location {
     font-size: 1em;
     display: flex;
     align-items: center;
+    margin-right: 20px;
+    gap: 10px;
 }
 
 /* Menu principal */
 .main-menu {
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 20px;
     align-items: center;
     padding: 20px 0;
+    position: relative; /* Necessário para o alinhamento do carrinho */
 }
 
 .main-menu .logo {
@@ -46,6 +52,7 @@
 .main-menu nav ul {
     list-style: none;
     display: flex;
+    justify-content: center; /* Centraliza os itens */
     gap: 30px;
 }
 
@@ -67,6 +74,84 @@
 .cart-icon i {
   color: black;
 }
+
+/*CARRINHO*/
+.cartBtn {
+  width: 155px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  /* changes: */
+  position: absolute;
+    right: 20px; /* Alinha o carrinho à direita */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cart {
+  z-index: 2;
+}
+
+.cartBtn:active {
+  transform: scale(0.96);
+}
+
+.product {
+  position: absolute;
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 23px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+  animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.cartBtn:hover .cart {
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 /* Estilos para o carrinho lateral */
 .cart-sidebar {
