@@ -1,3 +1,5 @@
+                         /*  1ª sessão  */
+
 /* Reset básico */
 * {
     margin: 0;
@@ -52,6 +54,60 @@
     color: black;
     font-size: 1.2em;
 }
+
+/* Ícone de carrinho no menu */
+.cart-icon {
+  position: relative;
+  margin-left: auto;
+  font-size: 1.5em;
+  cursor: pointer;
+ 
+}
+
+.cart-icon i {
+  color: black;
+}
+
+/* Estilos para o carrinho lateral */
+.cart-sidebar {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cart-content {
+  flex: 1;
+}
+
+.close-cart {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close-cart:hover {
+  background-color: #555;
+}
+
 
 /* Hero Section */
 .hero {
@@ -353,7 +409,7 @@
 
 .divider {
   color: #ccc;
-  font-size: 1.2em;
+  font-size: 4em;
 }
 
 .info-extra {

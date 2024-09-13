@@ -31,7 +31,19 @@
                 <li><a href="#ciclismo">Ciclismo</a></li>
             </ul>
         </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
     </header>
+
+    <!-- Aba lateral do carrinho -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <h2>Meu Carrinho</h2>
+    <div id="cart-content" class="cart-content">
+        <p>Carrinho vazio. Faça sua compra já...</p>
+    </div>
+    <button id="close-cart" class="close-cart">Fechar</button>
+</div>
 
     <!-- Imagem de fundo com frase -->
     <section class="hero">
@@ -41,9 +53,26 @@
     </section>
     <br>
     
-    <!--2 sessão-->
+    <script>
+        const cartIcon = document.querySelector('.cart-icon');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const closeCart = document.getElementById('close-cart');
+    
+        // Abrir a aba lateral ao clicar no ícone de carrinho
+        cartIcon.addEventListener('click', () => {
+            cartSidebar.classList.add('open');
+        });
+    
+        // Fechar a aba lateral ao clicar no botão de fechar
+        closeCart.addEventListener('click', () => {
+            cartSidebar.classList.remove('open');
+        });
+    </script>
+    
 
-    <hr class="linha-horizontal">
+    <!--2 sessão--> 
+
+    <!--<hr class="linha-horizontal">-->
 
         <div class="info-container">
             <!--informações de pagamento: FORA O CARTÃO DE CRÉDITO-->            
@@ -99,12 +128,13 @@
             </div>
         </div>
 
-    <hr class="linha-horizontal">
+    <!--<hr class="linha-horizontal">-->
 
+    <!--
     <br><br>
     <h1 align="center">Destaques</h1>
     <hr>
-    
+    -->
 
 
 
