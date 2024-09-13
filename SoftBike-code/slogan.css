@@ -23,6 +23,23 @@
     text-decoration: none;
     font-size: 1.5em;
     margin-right: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+/*efeito menu*/
+.social-menu a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-menu a i {
+  font-size: 24px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-menu a:hover i {
+  color: #f2481d; /* Escolha uma cor para destacar, pode mudar de acordo com a rede social */
 }
 
 .social-menu a.location {
@@ -44,6 +61,23 @@
     position: relative; /* Necessário para o alinhamento do carrinho */
 }
 
+/*TODO: TESTE EFEITO LOGO:*/
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-bike {
+  width: 150px;
+  transition: transform 0.4s ease-in-out;
+}
+
+#logo-bike:hover {
+  transform: translateX(10px) rotate(10deg);
+}
+
+
 .main-menu .logo {
     height: 50px;
     margin-right: 20px;
@@ -60,6 +94,15 @@
     text-decoration: none;
     color: black;
     font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+}
+
+/* Efeito ao passar o mouse */
+.main-menu nav ul li a:hover {
+  color: #ff5050; /* Muda a cor do texto para uma cor de destaque */
+  transform: scale(1.1); /* Aumenta levemente o tamanho */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
 }
 
 /* Ícone de carrinho no menu */
@@ -204,6 +247,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hero-text h1 {
@@ -214,6 +258,11 @@
                  -4px -4px 8px rgba(0, 0, 0, 0.7), 
                  4px -4px 8px rgba(0, 0, 0, 0.7), 
                  -4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.highlighted-products {
+  margin-top: 20px;
+  color: white;
 }
 
 /*Linha divisória*/
