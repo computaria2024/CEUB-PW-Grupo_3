@@ -227,7 +227,7 @@
   /*CREDIT CARD */
   /* From Uiverse.io by JkHuger */ 
 .card,
-.card__chip {
+.card__chip { 
   overflow: hidden;
   position: relative;
 }
@@ -254,6 +254,8 @@
   width: 10.3em;
   height: 6.8em;
   transform: translate3d(0,0,0);
+  /* TODO: alteração de margem de distancia*/
+  margin-right: 30px; 
 }
 
 .card__info,
