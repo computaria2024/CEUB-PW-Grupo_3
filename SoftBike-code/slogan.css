@@ -87,7 +87,7 @@
     list-style: none;
     display: flex;
     justify-content: center; /* Centraliza os itens */
-    gap: 30px;
+    gap: 10px;
 }
 
 .main-menu nav ul li a {
