@@ -118,7 +118,6 @@
   color: black;
 }
 
-/*CARRINHO*/
 /* CARRINHO */
 .cartBtn {
   width: 155px;
@@ -142,6 +141,9 @@
   z-index: 1000; /* Garante que fique acima de outros elementos */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .cart {
   z-index: 2;
