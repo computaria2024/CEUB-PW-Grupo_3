@@ -2,6 +2,11 @@
     padding: 50px;
     text-align: center;
     background-color: #f9f9f9;
+    /*changes*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste conforme necessário para o tamanho do fundo */
 }
 
 .product-grid {
@@ -96,14 +101,11 @@
 
 /* Testando o título diferente para bike */
 .product-selection h1{
-    content: "";
-    position: flex;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     width: 100%;
-    height: 1.2em; /* Ajuste conforme a altura do texto */
+    height: 2.5em; /* Ajuste conforme a altura do texto */
     background: linear-gradient(to left, #0291c5,#148bbc,#2686b2,#3880a9,#4a7aa0,#5c7596,#6e6f8d,#816a84,#93647a,#a55e71,#b75967,#c9535e,#db4d55,#ed484b,#ff4242); /* Escolha as cores que preferir */
     z-index: -1; /* Posiciona o fundo atrás do texto */
-    border-radius: 4px; /* Opcional: adiciona cantos arredondados */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    line-height: 2.5em; /* Ajuste conforme necessário */
 }
