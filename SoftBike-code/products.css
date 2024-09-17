@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Ajuste conforme necessário para o tamanho do fundo */
+    gap: 40px; /* Espaçamento entre a imagem e os produtos */
+
 }
 
 .product-grid {
@@ -103,9 +105,29 @@
 .product-selection h1{
     position: relative;
     width: 100%;
-    height: 2.5em; /* Ajuste conforme a altura do texto */
-    background: linear-gradient(to left, #0291c5,#148bbc,#2686b2,#3880a9,#4a7aa0,#5c7596,#6e6f8d,#816a84,#93647a,#a55e71,#b75967,#c9535e,#db4d55,#ed484b,#ff4242); /* Escolha as cores que preferir */
-    z-index: -1; /* Posiciona o fundo atrás do texto */
+    height: 5.5em; /* Ajuste conforme a altura do texto */
+    background-image: linear-gradient(to bottom, #000000, #333333, #666666, #CCCCCC, #FFFFFF);
+     z-index: -1; /* Posiciona o fundo atrás do texto */
     text-align: center; /* Centraliza o texto horizontalmente */
     line-height: 2.5em; /* Ajuste conforme necessário */
 }
+
+/* foto bikes 
+.bikes-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px; 
+  }
+.bikes-image {
+    flex: 1;
+}
+
+  .bikes-image img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    display: block;
+    margin-left: 20px;
+  } */
