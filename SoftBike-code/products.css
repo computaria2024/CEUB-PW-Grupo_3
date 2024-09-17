@@ -93,3 +93,17 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Testando o título diferente para bike */
+.product-selection h1{
+    content: "";
+    position: flex;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1.2em; /* Ajuste conforme a altura do texto */
+    background: linear-gradient(to left, #0291c5,#148bbc,#2686b2,#3880a9,#4a7aa0,#5c7596,#6e6f8d,#816a84,#93647a,#a55e71,#b75967,#c9535e,#db4d55,#ed484b,#ff4242); /* Escolha as cores que preferir */
+    z-index: -1; /* Posiciona o fundo atrás do texto */
+    border-radius: 4px; /* Opcional: adiciona cantos arredondados */
+}
