@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Garamond', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
 }
 
 /* Menu de redes sociais */
@@ -14,6 +15,7 @@
     justify-content: flex-end;
     background-color: black;
     padding: 10px;
+    font-family: 'Bai Jamjuree1', sans-serif;
     
 }
 
@@ -255,6 +257,7 @@ html {
 .hero-text h1 {
     color: white;
     font-size: 6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), 
                  -4px -4px 8px rgba(0, 0, 0, 0.7), 
@@ -263,19 +266,6 @@ html {
     z-index: 1; /* Garante que o texto fique acima do fundo */
 }
 
-.highlighted-products {
-  margin-top: 20px;
-  color: white;
-}
-
-/*Linha divisória*/
-.linha-horizontal {
-    border: none; /* Remove a borda padrão */
-    border-top: 1px solid black; /* Espessura e cor da linha */
-    width: 80%; /* Largura da linha (ajuste conforme necessário) */
-    margin: 0 auto; /* Centraliza horizontalmente */
-  }
-  
   /*CREDIT CARD */
   /* From Uiverse.io by JkHuger */ 
 .card,
