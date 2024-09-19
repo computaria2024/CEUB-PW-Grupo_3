@@ -63,7 +63,6 @@
     position: relative; /* Necessário para o alinhamento do carrinho */
 }
 
-/*TODO: TESTE EFEITO LOGO:*/
 .logo {
   display: flex;
   align-items: center;
@@ -243,7 +242,7 @@ html {
 
 /* Hero Section */
 .hero {
-    background-image: url('media/fundo1.jpg');
+    background-image: url('../../media/fundo1.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;

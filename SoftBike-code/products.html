@@ -7,18 +7,23 @@
 
     <!--Icone página-->
     <link rel="icon" href="media/browser.ico">
+
     <!-- Link para ícones de redes sociais (usando FontAwesome como exemplo)  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!--Link CSS slogan-->
-    <link rel="stylesheet" href="slogan.css">
+    <link rel="stylesheet" href="assets/css/slogan.css">
+
     <!--Link CSS products-->
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+
     <!--TESTANDO etapa de animação:-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Menu de redes sociais -->
-    <div class="social-menu" data-aos="fade-down"> <!--TODO: ALTERAÇÃO ANIMAÇÃO-->
+    <div class="social-menu" data-aos="fade-down"> <!--ALTERAÇÃO ANIMAÇÃO-->
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -69,8 +74,8 @@
         <hr class="linha-horizontal">
         <br><br>
         <div class="product-grid" data-aos="fade-up">
-        
-            <!-- Product 1 -->
+            
+            <!-- Bike 1 -->
             <div class="product-card">
                 <img src="media/bike1.png" alt="Bike 1">
                 <h2>Bicicleta Fun Comp Shimano 16v (Aqua e Preto) - Sense</h2>
@@ -84,7 +89,7 @@
                 </div>
             </div>
         
-            <!-- Product 2 -->
+            <!-- Bike 2 -->
             <div class="product-card">
                 <img src="media/bike2.png" alt="Bike 2">
                 <h2>Mountain Bike Caloi Explorer Sport 24 velocidades Aro 29</h2>
@@ -147,45 +152,43 @@
         </div>
     </selection>
 
+     <!--EFEITOS JAVASCRIPT-->    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <script>
+         AOS.init({
+             duration: 1200,  // Duração da animação em milissegundos
+             once: true,  // Animação acontece uma única vez ao rolar para baixo
+         });
+         const cartBtn = document.querySelector('.cartBtn');
+         const cartSidebar = document.getElementById('cart-sidebar');
+         const closeCart = document.getElementById('close-cart');
+     
+         // Abrir a aba lateral ao clicar no botão de adicionar ao carrinho
+         cartBtn.addEventListener('click', () => {
+             cartSidebar.classList.add('open');
+         });
+     
+         // Fechar a aba lateral ao clicar no botão de fechar
+         closeCart.addEventListener('click', () => {
+             cartSidebar.classList.remove('open');
+         });
+ 
+         //TESTE DO MOVIMENTO SMOOTH
+         document.querySelectorAll('.main-menu nav ul li a').forEach(anchor => {
+             anchor.addEventListener('click', function(e) {
+                 e.preventDefault();
+                 const targetId = this.getAttribute('href').substring(1);
+                 const targetSection = document.getElementById(targetId);
+                 if (targetSection) {
+                     window.scrollTo({
+                         top: targetSection.offsetTop,
+                         behavior: 'smooth'
+                     });
+                 }
+             });
+         });
+ 
+     </script>
 
-
-
-    <!--EFEITOS JAVASCRIPT-->    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,  // Duração da animação em milissegundos
-            once: true,  // Animação acontece uma única vez ao rolar para baixo
-        });
-        const cartBtn = document.querySelector('.cartBtn');
-        const cartSidebar = document.getElementById('cart-sidebar');
-        const closeCart = document.getElementById('close-cart');
-    
-        // Abrir a aba lateral ao clicar no botão de adicionar ao carrinho
-        cartBtn.addEventListener('click', () => {
-            cartSidebar.classList.add('open');
-        });
-    
-        // Fechar a aba lateral ao clicar no botão de fechar
-        closeCart.addEventListener('click', () => {
-            cartSidebar.classList.remove('open');
-        });
-
-        <!--TESTE DO MOVIMENTO SMOOTH-->
-        document.querySelectorAll('.main-menu nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-    </script>
 </body>
 </html>
