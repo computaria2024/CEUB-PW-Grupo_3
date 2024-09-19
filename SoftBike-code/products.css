@@ -83,13 +83,13 @@
 }
 
 .buy-now:hover {
-    background-color: darkgreen;
+    background-color: lightgreen;
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .add-to-cart {
-    background-color: #007bff;
+    background-color: darkblue;
     color: white;
 }
 
@@ -135,6 +135,7 @@
     color: white;
     size: 5;
 }
+
 
 /* foto bikes 
 .bikes-section {

@@ -7,17 +7,12 @@
 
     <!--Icone página-->
     <link rel="icon" href="media/browser.ico">
-
-
     <!-- Link para ícones de redes sociais (usando FontAwesome como exemplo)  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <!--Link CSS slogan-->
     <link rel="stylesheet" href="slogan.css">
-
     <!--Link CSS products-->
     <link rel="stylesheet" href="products.css">
-
     <!--TESTANDO etapa de animação:-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
@@ -38,7 +33,7 @@
                 <li><a href="#bicicletas">Bicicletas</a></li>
                 <li><a href="#acessorios">Acessórios</a></li>
                 <li><a href="#pecas">Peças para bike</a></li>
-                <li><a href="#sobre">A SoftBike</a></li>
+                <li><a href="#marcas">Nossas marcas</a></li>
                 <li><a href="#clientes">Avaliação dos Clientes</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -62,97 +57,92 @@
         </div>
         <button id="close-cart" class="close-cart">Fechar</button>
     </div>
-
-    <font color="white"><h1 align="center">Bicicletas</h1></font> <br><br>
-
+    <div class="cupom">
+        <h3>Bem vindo! | Garanta 5% de desconto em todo o site! Use o cupom #SoftBike12</h3>
+    </div> <br> <br>
     
-        <!--PROTOTIPO PRODUTOS-->
-
-        <div class="product-grid">
-            <!-- imagem fundo
-            <div class="bikes-image">
-                <img src="media/bikes.png.png" alt="Ilustração de bicicletas" />
-            </div> -->
-
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="media/bike1.png" alt="Bike 1">
-                <h2>Bicicleta Fun Comp Shimano 16v (Aqua e Preto) - Sense</h2>
-                <h3>R$ 2.690,00</h3>
-                <p>ou R$ 2.555,50 à vista no boleto ou PIX
-                    ou até 12x de R$ 224,17 sem juros </p>
-                
-                <div class="product-actions">
-                    <button class="buy-now">Comprar</button>
-                    <button class="add-to-cart" onclick="addToCart('Bike 1')">Adicionar ao carrinho</button>
-                </div>
-            </div>
+        <selection id="bicicletas" class="product-selection">
+            <h1>Bicicletas</h1> <br><br>
+            <hr class="linha-horizontal">
+            <br><br>
+            <div class="product-grid">
             
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img src="media/bike2.png" alt="Bike 2">
-                <h2>Mountain Bike Caloi Explorer Sport 24 velocidades Aro 29</h2>
-                <h3>R$ 3.490,00</h3>
-                <p>ou R$ 3.315,50 à vista no boleto ou PIX
-                    ou até 12x de R$ 290,84 sem juros </p>
-                <div class="product-actions">
-                    <button class="buy-now">Comprar</button>
-                    <button class="add-to-cart" onclick="addToCart('Bike 2')">Adicionar ao carrinho</button>
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="media/bike1.png" alt="Bike 1">
+                    <h2>Bicicleta Fun Comp Shimano 16v (Aqua e Preto) - Sense</h2>
+                    <h3>R$ 2.690,00</h3>
+                    <p>ou R$ 2.555,50 à vista no boleto ou PIX
+                        ou até 12x de R$ 224,17 sem juros </p>
+            
+                    <div class="product-actions">
+                        <button class="buy-now">Comprar</button>
+                        <button class="add-to-cart" onclick="addToCart('Bike 1')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="media/bike2.png" alt="Bike 2">
+                    <h2>Mountain Bike Caloi Explorer Sport 24 velocidades Aro 29</h2>
+                    <h3>R$ 3.490,00</h3>
+                    <p>ou R$ 3.315,50 à vista no boleto ou PIX
+                        ou até 12x de R$ 290,84 sem juros </p>
+                    <div class="product-actions">
+                        <button class="buy-now">Comprar</button>
+                        <button class="add-to-cart" onclick="addToCart('Bike 2')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="media/bike3.png" alt="Bike 3">
+                    <h2>BICICLETA 29 CANNONDALE U TRAIL 5 10V MICROSHIFT AZUL</h2>
+                    <h3>R$ 3.300,00</h3>
+                    <p>ou R$ 3.315,00 à vista no boleto ou PIX
+                        ou até 12x de R$ 275,00 sem juros</p>
+                    <div class="product-actions">
+                        <button class="buy-now">Comprar</button>
+                        <button class="add-to-cart" onclick="addToCart('Bike 3')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="media/bike4.png" alt="Bike 4">
+                    <h2>Bicicleta Impact Race Sram Gx 12v (Cinza e Aqua) - Sense</h2>
+                    <h3>R$ 9.990,00</h3>
+                    <p>ou R$ 9.490,50 à vista no boleto ou PIX
+                        ou até 12x de R$ 832,50 sem juros </p>
+                    <div class="product-actions">
+                        <button class="buy-now">Comprar</button>
+                        <button class="add-to-cart" onclick="addToCart('Bike 4')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="media/bike5.png" alt="Bike 5">
+                    <h2>Bicicleta Roadmax Shimano 105 DI2 24v - Kode</h2>
+                    <h3>R$ 34.990,00</h3>
+                    <p>ou R$ 33.240,50 à vista no boleto ou PIX
+                        ou até 12x de R$ 2.915,83 sem juros </p>
+                    <div class="product-actions">
+                        <button class="buy-now">Comprar</button>
+                        <button class="add-to-cart" onclick="addToCart('Bike 5')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="media/bike6.png" alt="Bike 6">
+                    <h2>Bicicleta Impact Race Sram Gx 12v (Verde e Marrom) - Sense</h2>
+                    <h3>R$ 9.990,00</h3>
+                    <p>ou R$ 9.490,50 à vista no boleto ou PIX
+                        ou até 12x de R$ 832,50 sem juros </p>
+                    <div class="product-actions">
+                        <button class="buy-now">Comprar</button>
+                        <button class="add-to-cart" onclick="addToCart('Bike 6')">Adicionar ao carrinho</button>
+                    </div>
                 </div>
             </div>
-    
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img src="media/bike3.png" alt="Bike 3">
-                <h2>BICICLETA 29 CANNONDALE U TRAIL 5 10V MICROSHIFT AZUL</h2>
-                <h3>R$ 3.300,00</h3>
-                <p>ou R$ 3.315,00 à vista no boleto ou PIX
-                    ou até 12x de R$ 275,00 sem juros</p>
-                <div class="product-actions">
-                    <button class="buy-now">Comprar</button>
-                    <button class="add-to-cart" onclick="addToCart('Bike 3')">Adicionar ao carrinho</button>
-                </div>
-            </div>
-    
-            <!-- Product 4 -->
-            <div class="product-card">
-                <img src="media/bike4.png" alt="Bike 4">
-                <h2>Bicicleta Impact Race Sram Gx 12v (Cinza e Aqua) - Sense</h2>
-                <h3>R$ 9.990,00</h3>
-                <p>ou R$ 9.490,50 à vista no boleto ou PIX
-                    ou até 12x de R$ 832,50 sem juros </p>
-                <div class="product-actions">
-                    <button class="buy-now">Comprar</button>
-                    <button class="add-to-cart" onclick="addToCart('Bike 4')">Adicionar ao carrinho</button>
-                </div>
-            </div>
-    
-            <!-- Product 5 -->
-            <div class="product-card">
-                <img src="media/bike5.png" alt="Bike 5">
-                <h2>Bicicleta Roadmax Shimano 105 DI2 24v - Kode</h2>
-                <h3>R$ 34.990,00</h3>
-                <p>ou R$ 33.240,50 à vista no boleto ou PIX
-                    ou até 12x de R$ 2.915,83 sem juros </p>
-                <div class="product-actions">
-                    <button class="buy-now">Comprar</button>
-                    <button class="add-to-cart" onclick="addToCart('Bike 5')">Adicionar ao carrinho</button>
-                </div>
-            </div>
-    
-            <!-- Product 6 -->
-            <div class="product-card">
-                <img src="media/bike6.png" alt="Bike 6">
-                <h2>Bicicleta Impact Race Sram Gx 12v (Verde e Marrom) - Sense</h2>
-                <h3>R$ 9.990,00</h3>
-                <p>ou R$ 9.490,50 à vista no boleto ou PIX
-                    ou até 12x de R$ 832,50 sem juros </p>
-                <div class="product-actions">
-                    <button class="buy-now">Comprar</button>
-                    <button class="add-to-cart" onclick="addToCart('Bike 6')">Adicionar ao carrinho</button>
-                </div>
-            </div>
-        </div>
+        </selection>
 
 
 
