@@ -69,27 +69,29 @@
     </div> <br> <br>
 
 
-    <selection id="bicicletas" class="product-selection">
-        <h1>Bicicletas</h1> <br><br>
+    <!-- Seção Bicicletas -->
+    <section id="bicicletas" class="product-selection">
+        
+        <h1 align="center">Bicicletas</h1> <br><br>
         <hr class="linha-horizontal">
         <br><br>
-        <div class="product-grid" data-aos="fade-up">
-            
-            <!-- Bike 1 -->
+        <div class="product-grid">
+        
+            <!-- Product 1 -->
             <div class="product-card">
                 <img src="media/bike1.png" alt="Bike 1">
                 <h2>Bicicleta Fun Comp Shimano 16v (Aqua e Preto) - Sense</h2>
                 <h3>R$ 2.690,00</h3>
                 <p>ou R$ 2.555,50 à vista no boleto ou PIX
                     ou até 12x de R$ 224,17 sem juros </p>
-        
+                
                 <div class="product-actions">
                     <button class="buy-now">Comprar</button>
                     <button class="add-to-cart" onclick="addToCart('Bike 1')">Adicionar ao carrinho</button>
                 </div>
             </div>
-        
-            <!-- Bike 2 -->
+            
+            <!-- Product 2 -->
             <div class="product-card">
                 <img src="media/bike2.png" alt="Bike 2">
                 <h2>Mountain Bike Caloi Explorer Sport 24 velocidades Aro 29</h2>
@@ -101,6 +103,7 @@
                     <button class="add-to-cart" onclick="addToCart('Bike 2')">Adicionar ao carrinho</button>
                 </div>
             </div>
+    
             <!-- Product 3 -->
             <div class="product-card">
                 <img src="media/bike3.png" alt="Bike 3">
@@ -113,6 +116,7 @@
                     <button class="add-to-cart" onclick="addToCart('Bike 3')">Adicionar ao carrinho</button>
                 </div>
             </div>
+    
             <!-- Product 4 -->
             <div class="product-card">
                 <img src="media/bike4.png" alt="Bike 4">
@@ -125,6 +129,7 @@
                     <button class="add-to-cart" onclick="addToCart('Bike 4')">Adicionar ao carrinho</button>
                 </div>
             </div>
+    
             <!-- Product 5 -->
             <div class="product-card">
                 <img src="media/bike5.png" alt="Bike 5">
@@ -137,6 +142,7 @@
                     <button class="add-to-cart" onclick="addToCart('Bike 5')">Adicionar ao carrinho</button>
                 </div>
             </div>
+    
             <!-- Product 6 -->
             <div class="product-card">
                 <img src="media/bike6.png" alt="Bike 6">
@@ -150,7 +156,8 @@
                 </div>
             </div>
         </div>
-    </selection>
+    </section>
+
 
      <!--EFEITOS JAVASCRIPT-->    
      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -158,6 +165,7 @@
          AOS.init({
              duration: 1200,  // Duração da animação em milissegundos
              once: true,  // Animação acontece uma única vez ao rolar para baixo
+             delay: 200,  // Atraso de 200ms entre animações
          });
          const cartBtn = document.querySelector('.cartBtn');
          const cartSidebar = document.getElementById('cart-sidebar');
@@ -189,6 +197,7 @@
          });
  
      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
 
 </body>
 </html>

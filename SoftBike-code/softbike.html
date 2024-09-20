@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoftBike</title>
+    <title>SoftBike - Loja online de bicicletas, acessórios e peças</title>
 
     <!--Icone página-->
     <link rel="icon" href="media/browser.ico">
@@ -63,7 +63,7 @@
     </div>
 
     <!-- Imagem de fundo com frase -->
-    <section class="hero" data-aos="fade-up"> <!--TODO: ALTERAÇÃO ANIMAÇÃO-->
+    <section class="hero" data-aos="fade-up"> <!--ALTERAÇÃO ANIMAÇÃO-->
         <div class="hero-text">
             <h1>Pedale Mais, <br> Preocupe-se <br>Menos</h1>
         </div>
@@ -258,6 +258,7 @@
         AOS.init({
             duration: 1200,  // Duração da animação em milissegundos
             once: true,  // Animação acontece uma única vez ao rolar para baixo
+            delay: 200,  // Atraso de 200ms entre animações
         });
         const cartBtn = document.querySelector('.cartBtn');
         const cartSidebar = document.getElementById('cart-sidebar');
@@ -289,6 +290,7 @@
         });
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
 
 </body>
 </html>
