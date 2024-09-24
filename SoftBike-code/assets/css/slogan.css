@@ -41,7 +41,7 @@
 }
 
 .social-menu a:hover i {
-  color: #f2481d; /* Escolha uma cor para destacar, pode mudar de acordo com a rede social */
+  color: #1d68f2; /* Escolha uma cor para destacar, pode mudar de acordo com a rede social */
 }
 
 .social-menu a.location {
@@ -101,7 +101,7 @@
 
 /* Efeito ao passar o mouse */
 .main-menu nav ul li a:hover {
-  color: #ff5050; /* Muda a cor do texto para uma cor de destaque */
+  color: #1b3cf7; /* Muda a cor do texto para uma cor de destaque */
   transform: scale(1.1); /* Aumenta levemente o tamanho */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
 }
@@ -555,4 +555,69 @@ html {
   margin-top: 4px;
   text-align: center; 
 }
+
+/* TENTATIVA DE PROPAGANDA */
+.see-more {
+  margin-left: 20px; /* TODO: teste*/
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.see-more:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #42f5bc;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.see-more:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.see-more span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.see-more:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
  
