@@ -558,11 +558,13 @@ html {
 
 /* TENTATIVA DE PROPAGANDA */
 .see-more {
-  margin-left: 20px; /* TODO: teste*/
-  position: relative;
+  left: 250px; /* Distância da borda esquerda */
+  bottom: 5%; /* Alinhado ao canto inferior */
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 20px; /* Tamanho do botão também deve ser relativo */
   border-radius: 5px;
   background: #183153;
   font-family: "Montserrat", sans-serif;
@@ -570,13 +572,17 @@ html {
   overflow: hidden;
   cursor: pointer;
   border: none;
+  z-index: 10; /* Garante que o botão fique acima da imagem */
+  transition: background 0.3s ease;
+  transform: translateX(-50%); /* Ajusta a centralização */
+
 }
 
 .see-more:after {
   content: " ";
   width: 0%;
   height: 100%;
-  background: #42f5bc;
+  background: lightgreen;
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;
@@ -620,4 +626,18 @@ html {
   }
 }
 
- 
+.propaganda{
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.propaganda img {
+  background-image: url('../../media/propaganda.png');
+  width: 100%; /* A imagem ocupa toda a largura da página */
+  height: auto; /* Altura ajustada proporcionalmente */
+  background-size: cover;
+  background-position: center;
+}
