@@ -20,6 +20,9 @@
     <!--TESTANDO etapa de animação:-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     
+    <!--Newsletter and new changes-->
+    <link rel="stylesheet" href="assets/css/news.css">
+
     <!--script para o carrinho-->
     <script src="assets/js/cart.js"></script>
 
@@ -377,8 +380,45 @@
 
     <!-- Seção Clientes -->
     <section id="clientes" class="product-selection" data-aos="fade-left">
-        <h2>Avaliação dos Clientes</h2>
-        <p>Informações de avaliação dos clientes serão exibidas aqui.</p>
+        <div class="clientes__container">
+            <!-- Coluna Esquerda: Newsletter -->
+            <div class="clientes__coluna esquerda">
+              <div class="newsletter">
+                <span class="newsletter__title">Newsletter</span>
+                <p class="newsletter__content">
+                  Fique por dentro de todas as novidades que ocorrem na SOFTBIKE!
+                </p>
+                <form class="newsletter__form">
+                  <input required="" type="email" placeholder="Seu E-mail" />
+                  <button class="newsletter__button">Inscreva-se</button>
+                </form>
+              </div>
+            </div>
+        
+            <!-- Coluna Meio: Feedback de Cliente 1 -->
+            <div class="clientes__coluna meio">
+              <div class="feedback">
+                <h3>Cliente 1</h3>
+                <p>"Excelente atendimento e qualidade nas bicicletas!"</p>
+              </div>
+              <div class="feedback">
+                <h3>Cliente 2</h3>
+                <p>"Adorei a variedade de modelos disponíveis."</p>
+              </div>
+            </div>
+        
+            <!-- Coluna Direita: Feedback de Cliente 2 -->
+            <div class="clientes__coluna direita">
+              <div class="feedback">
+                <h3>Cliente 3</h3>
+                <p>"Ótima experiência de compra, recomendo muito!"</p>
+              </div>
+              <div class="feedback">
+                <h3>Cliente 4</h3>
+                <p>"Entrega rápida e atendimento excelente!"</p>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Seção Contato -->
@@ -389,7 +429,7 @@
                 <div class="footer-logo">
                     <img src="media/logo2.png" alt="Logo SoftBike" class="footer-logo-img">
                 </div>
-                <div class="footer-content">
+                <div>
                     <h3>Fale Conosco</h3><br>
                     <p>Entre em contato para tirar dúvidas ou obter mais informações:</p> <br>
                     <ul class="footer-contact-list">
