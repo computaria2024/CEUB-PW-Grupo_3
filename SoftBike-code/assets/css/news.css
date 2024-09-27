@@ -6,7 +6,7 @@
   .clientes__container {
     display: flex;
     /*justify-content: space-between;*/
-    gap: 20px;
+    /*gap: 10px;*/
     justify-content: center; /* Alinha verticalmente ao centro */
     align-items: center; /* Centraliza verticalmente */
     height: 100%; /* A altura precisa ser definida */
@@ -28,6 +28,8 @@
 
   /* Estilos para a newsletter (coluna esquerda) */
   .newsletter {
+    margin-left: 100px;
+    margin-right: 80px;
     width: 100%;
     padding: 20px;
     background: #fff;
@@ -165,7 +167,9 @@
     padding: 2rem;
     max-width: 320px;
     border-radius: 10px;
-    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.7);
+    /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);*/
+
   }
   
   .header-comment {
@@ -232,6 +236,14 @@
     padding: 20px;
 }
 
+.footer-container p {
+  font-size: 1.4em;
+}
+
+.footer-container h3{
+  font-size: 1.8em;
+}
+
 .payment-icons img {
     width: 50px;
     margin-right: 10px;
@@ -250,7 +262,7 @@ padding: 0;
 
 .footer-contact-list li {
 margin-bottom: 10px;
-font-size: 1.1em;
+font-size: 1.4em;
 }
 
 .footer-contact-list li i {
@@ -263,14 +275,14 @@ margin-top: 20px;
 }
 
 .footer-social h4 {
-font-size: 1.2em;
+font-size: 1.6em;
 margin-bottom: 10px;
 }
 
 .footer-social a {
 margin: 0 10px;
 color: white;
-font-size: 1.5em;
+font-size: 1.8em;
 transition: color 0.3s ease;
 }
 

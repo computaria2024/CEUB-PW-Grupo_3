@@ -30,7 +30,7 @@
     max-width: 400px; /* Limita o tamanho máximo do cartão */
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
