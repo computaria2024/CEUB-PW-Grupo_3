@@ -312,3 +312,53 @@ color: #ccc;
     margin-top: 20px;
 }
 }
+
+.navigation-card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  align-self: center;
+  top: 20%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para alinhar perfeitamente ao centro */
+  transition: all 0.5s ease-in-out; /* Suaviza a transição ao fixar no topo */
+
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgb(0, 0, 0);
+  /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);*/
+  box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 1);
+
+
+  padding: 15px 20px;
+  border-radius: 50px;
+}
+
+.navigation-card.fixed {
+  top: 0; /* Move o card para o topo */
+  transform: translate(-50%, 0); /* Remove a translação vertical */
+  border-radius: 0 0 20px 20px; /* Ajusta a borda para parecer encaixado no topo */
+  width: auto; /* Ajusta para a largura total da página */
+  padding: 10px 20px; /* Ajuste o padding ao ficar no topo */
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(30, 30, 30);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.tab:hover {
+  background-color: rgb(50, 50, 50);
+}
