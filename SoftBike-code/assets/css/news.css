@@ -1,5 +1,6 @@
 #clientes {
     padding: 50px;
+    gap: 30px; /* Aumente o valor para mais espaço entre as colunas */
   }
   
   .clientes__container {
@@ -7,13 +8,23 @@
     /*justify-content: space-between;*/
     gap: 20px;
     justify-content: center; /* Alinha verticalmente ao centro */
+    align-items: center; /* Centraliza verticalmente */
     height: 100%; /* A altura precisa ser definida */
   }
   
   .clientes__coluna {
     flex: 1;
+    display: flex; /* Permite o uso de flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
     padding: 10px;
   }
+  
+  .clientes__coluna.esquerda {
+    margin-right: 60px; /* Defina o valor conforme necessário */
+  }
+  
 
   /* Estilos para a newsletter (coluna esquerda) */
   .newsletter {
