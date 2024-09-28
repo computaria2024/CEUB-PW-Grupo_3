@@ -337,6 +337,7 @@ color: #ccc;
   border-radius: 50px;
 }
 
+
 .navigation-card.fixed {
   top: 0; /* Move o card para o topo */
   transform: translate(-50%, 0); /* Remove a translação vertical */
