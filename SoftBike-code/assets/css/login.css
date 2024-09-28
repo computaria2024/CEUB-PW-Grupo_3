@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #1e0bf7, #563af9, #6A82FB, #8e6afb, #c799fd, #ffc9ff, #fcafbf);
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .header {
+    background-color: white;
+    width: 100%;
+    height: 13%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo {
+    height: auto;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 100px; /* Cria espaço abaixo da logo */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form-login {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px; /* Mantém o formulário responsivo */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para um visual mais profissional */
+  }
+  
+  .flex-column > label {
+    color: #151717;
+    font-weight: 600;
+  }
+  
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .span-login {
+    font-size: 14px;
+    color: #2d79f3;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    margin: 20px 0 10px;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .p {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    border: 1px solid #2d79f3;
+  }
+  
+  .form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
