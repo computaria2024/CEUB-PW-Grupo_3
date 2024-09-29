@@ -660,19 +660,17 @@
             navCard.classList.remove('fixed');
         }
         });
-
-        //pesquisa:
-        document.getElementById('search-trigger').addEventListener('click', function() {
-        var searchBox = document.getElementById('search-products');
-        
-        // Alterna a classe .hidden
-        searchBox.classList.toggle('hidden');
-      });
-
-
-
     </script>
-    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('search-trigger').addEventListener('click', function() {
+              var searchBox = document.getElementById('search-box');
+              searchBox.classList.toggle('hidden');
+          });
+      });
+    </script>
+
+      
 
 </body>
 </html>
