@@ -317,7 +317,7 @@ color: #ccc;
   width: fit-content;
   height: fit-content;
   display: flex;
-  z-index: 1000;
+  z-index: 999;
   position: fixed;
   align-self: center;
   top: 25%; /* Centraliza verticalmente */
@@ -365,8 +365,20 @@ color: #ccc;
 }
 
 /*pesquisa*/
-.hidden {
-  display: none;
+/* Fundo branco para a barra de pesquisa */
+.search-overlay {
+  position: fixed;
+  top: -100%; /* Fora da tela inicialmente */
+  left: 0;
+  width: 100%;
+  height: 15vh; /* O fundo ocupará 30% da altura da tela */
+  background-color: white;
+  z-index: 1000;
+  transition: top 0.5s ease; /* Animação suave */
+}
+
+.search-overlay.show {
+  top: 0; /* Desce para cobrir a tela */
 }
 
 .inputBox_container {
@@ -376,26 +388,20 @@ color: #ccc;
   max-width: 14em;
   width: fit-content;
   height: fit-content;
-  background-color: black;
-  border-radius: 0.8em;
-  overflow: hidden;
-  position: absolute;
-  top: 0; /* Alinhar com o topo do ícone */
-  right: -250px; /* Ligeiramente à direita do container de ícones */
-  z-index: 1000; /* Garante que fique visível sobre outros elementos */
-  transition: all 0.3s ease;
-
+  background-color: transparent;
+  margin: 50px auto; /* Centraliza horizontalmente */
+  padding: 10px;
 }
 
 .search_icon {
   height: 1em;
   padding: 0 0.5em 0 0.8em;
-  fill: #abb2bf;
+  fill: #000; /* Cor do ícone de pesquisa */
 }
 
 .inputBox {
   background-color: transparent;
-  color: #ffffff;
+  color: #000;
   outline: none;
   width: 100%;
   border: 0;
@@ -404,5 +410,5 @@ color: #ccc;
 }
 
 ::placeholder {
-  color: #abb2bf;
+  color: #888; /* Placeholder cinza */
 }
