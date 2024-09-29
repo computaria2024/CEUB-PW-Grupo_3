@@ -318,12 +318,12 @@ color: #ccc;
   height: fit-content;
   display: flex;
   z-index: 999;
-  position: fixed;
+  position: absolute;
   align-self: center;
-  top: 25%; /* Centraliza verticalmente */
+  top: 200px; /* Ajuste aqui para a posição inicial do menu */
   left: 50%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%); /* Ajuste para alinhar perfeitamente ao centro */
-  transition: all 0.5s ease-in-out; /* Suaviza a transição ao fixar no topo */
+  transition: all 1s ease-in-out; /* Suaviza a transição ao fixar no topo */
 
   align-items: center;
   justify-content: center;
@@ -339,7 +339,8 @@ color: #ccc;
 
 
 .navigation-card.fixed {
-  top: 0; /* Move o card para o topo */
+  position: fixed;
+  top: 0px; /* Ajuste o valor aqui conforme necessário */
   transform: translate(-50%, 0); /* Remove a translação vertical */
   border-radius: 0 0 20px 20px; /* Ajusta a borda para parecer encaixado no topo */
   width: auto; /* Ajusta para a largura total da página */
