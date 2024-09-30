@@ -320,7 +320,7 @@ color: #ccc;
   z-index: 999;
   position: absolute;
   align-self: center;
-  top: 200px; /* Ajuste aqui para a posição inicial do menu */
+  top: 190px; /* Ajuste aqui para a posição inicial do menu */
   left: 50%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%); /* Ajuste para alinhar perfeitamente ao centro */
   transition: all 1s ease-in-out; /* Suaviza a transição ao fixar no topo */
@@ -328,7 +328,7 @@ color: #ccc;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  background-color: rgba(0, 0, 0, 0.563); /* fundo geral */
+  background-color: rgba(0, 0, 0, 0.69); /* fundo geral */
   /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);*/
   box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 1);
 
@@ -339,6 +339,40 @@ color: #ccc;
 
 
 .navigation-card.fixed {
+  position: fixed;
+  top: 0px; /* Ajuste o valor aqui conforme necessário */
+  transform: translate(-50%, 0); /* Remove a translação vertical */
+  border-radius: 0 0 20px 20px; /* Ajusta a borda para parecer encaixado no topo */
+  width: auto; /* Ajusta para a largura total da página */
+  padding: 10px 20px; /* Ajuste o padding ao ficar no topo */
+}
+
+.navigation-card2 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  z-index: 999;
+  position: absolute;
+  align-self: center;
+  top: 93px; /* Ajuste aqui para a posição inicial do menu */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para alinhar perfeitamente ao centro */
+  transition: all 1s ease-in-out; /* Suaviza a transição ao fixar no topo */
+
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.868); /* fundo geral */
+  /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);*/
+  box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 1);
+
+
+  padding: 15px 20px;
+  border-radius: 50px;
+}
+
+
+.navigation-card2.fixed {
   position: fixed;
   top: 0px; /* Ajuste o valor aqui conforme necessário */
   transform: translate(-50%, 0); /* Remove a translação vertical */
@@ -412,4 +446,37 @@ color: #ccc;
 
 ::placeholder {
   color: #888; /* Placeholder cinza */
+}
+
+#sobre {
+  padding: 50px 0;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: stretch; /* Alinha as colunas para ter a mesma altura */
+  background-color: #e0f7fa; /* Azul claro pastel */
+
+  gap: 30px; /* Espaço entre as colunas */
+}
+
+.sobre-texto {
+  flex: 1;
+  padding: 50px 20px; /* Espaçamento interno */
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-left: 50px;
+}
+
+.sobre-video {
+  flex: 1;
+
+}
+
+.sobre-video video {
+  width: 100%; /* Ajuste o tamanho do vídeo */
+  height: 100%; /* O vídeo ocupará toda a altura da coluna */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombras sutis para o vídeo */
 }

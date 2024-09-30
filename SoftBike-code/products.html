@@ -14,7 +14,7 @@
     <!-- CSS's -->
     <link rel="stylesheet" href="assets/css/slogan.css">
     <link rel="stylesheet" href="assets/css/products.css">
-    
+    <link rel="stylesheet" href="assets/css/news.css">
     <!--TESTANDO etapa de animação:-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
@@ -37,7 +37,6 @@
                 <li><a href="#acessorios">Acessórios</a></li>
                 <li><a href="#pecas">Peças para bike</a></li>
                 <li><a href="#marcas">Nossas marcas</a></li>
-                <li><a href="#clientes">Avaliação dos Clientes</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -61,6 +60,52 @@
         <button id="close-cart" class="close-cart">Fechar</button>
     </div>
 
+    <div class="navigation-card2">
+        <a href="#" class="tab">
+          <!-- Primeiro ícone -->
+          <svg class="svgIcon" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z" stroke="white" stroke-width="7"></path>
+          </svg>
+        </a>
+      
+        <a href="login.html" class="tab">
+          <!-- Segundo ícone -->
+          <svg width="104" height="100" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="21.5" y="3.5" width="60" height="60" rx="30" stroke="white" stroke-width="7"></rect>
+            <g clip-path="url(#clip0_41_27)">
+              <mask id="mask0_41_27" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="61" width="104" height="52">
+                <path d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z" fill="white"></path>
+              </mask>
+              <g mask="url(#mask0_41_27)">
+                <path d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z" fill="white"></path>
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_41_27">
+                <rect width="104" height="39" fill="white" transform="translate(0 61)"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      
+        <a href="javascript:void(0);" class="tab" id="search-trigger">
+          <!-- Terceiro ícone (search) -->
+          <svg width="101" height="114" viewBox="0 0 101 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="46.1726" cy="46.1727" r="29.5497" transform="rotate(36.0692 46.1726 46.1727)" stroke="white" stroke-width="7"></circle>
+            <line x1="61.7089" y1="67.7837" x2="97.7088" y2="111.784" stroke="white" stroke-width="7"></line>
+          </svg>
+        </a>
+      </div>
+      
+      <!-- Pesquisar -->
+    <div id="search-overlay" class="search-overlay">
+      <div class="inputBox_container">
+          <svg class="search_icon" viewBox="0 0 24 24">
+              <path d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8c1.72 0 3.3-.56 4.58-1.5l4.25 4.25 1.5-1.5-4.25-4.25C18.44 13.3 20 11.72 20 10c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
+          </svg>
+          <input type="text" class="inputBox" placeholder="Pesquisar produtos..." id="search-input">
+      </div>
+    </div>
 
     <!--CUPOM-->
     <div class="cupom" data-aos="fade-up">
@@ -148,46 +193,405 @@
                     <button class="add-to-cart" onclick="addToCart('Bike 6')">Adicionar ao carrinho</button>
                 </div>
             </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="media/bike7.png" alt="Bike 7">
+                <h2>Bicicleta Hardcore Comp Shimano Deore 11v (Aluminio e Preto) - Sense</h2>
+                <h3>R$ 7.990,00</h3>
+                <p>ou R$ 7.590,50 à vista no boleto ou PIX
+                    ou até 12x de R$ 665,83 sem juros </p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('Bike 7')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="media/bike8.png" alt="Bike 8">
+                <h2>Bicicleta One Shimano 21v (Grafite e Rosa) - Sense</h2>
+                <h3>R$ 2.190,00</h3>
+                <p>ou R$ 2.080,50 à vista no boleto ou PIX
+                    ou até 12x de R$ 182,50 sem juros </p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('Bike 8')">Adicionar ao carrinho</button>
+                </div>
+            </div>
         </div>
-    </selection>
+    </selection> <br><br><br> <br><br>
+
+    <!-- Seção Acessórios -->
+    <section id="acessorios" class="product-selection" data-aos="fade-up">
+        <h1>Acessórios</h1> <br><br>
+        <hr class="linha-horizontal">
+        <br><br><br>
+
+        <div class="product-grid">
+        
+            <!-- Acessório 1 -->
+            <div class="product-card">
+                <img src="media/aces1.png" alt="Acessório 1"><br>
+                <h2>Capacete para ciclismo de estrada Velocis com Mips Trek</h2>
+                <h3>R$ 2.625,00</h3>
+                <p>ou R$ 2.493,75 à vista no boleto ou PIX
+                    ou até 12x de R$ 218,75 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 1', price: 150, image: 'media/aces1.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 2 -->
+            <div class="product-card">
+                <img src="media/aces2.png" alt="Acessório 2" loading="lazy"><br>
+                <h2>Touca para ciclismo Windshell Bontrager</h2>
+                <h3>R$ 145,00</h3>
+                <p>ou R$ 137,75 à vista no boleto ou PIX
+                    ou até 6x de R$ 24,16 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 2', price: 90, image: 'media/aces2.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 3 -->
+            <div class="product-card">
+                <img src="media/aces3.png" alt="Acessório 3" loading="lazy"><br>
+                <h2>Capacete para mountain bike Trek Rally WaveCel</h2>
+                <h3>R$ 1.215,00</h3>
+                <p>ou R$ 1.154,25 à vista no boleto ou PIX
+                    ou até 12x de R$ 101,25 sem juros</p>
+
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 3', price: 45, image: 'media/aces3.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 4 -->
+            <div class="product-card">
+                <img src="media/aces4.png" alt="Acessório 4" loading="lazy"><br>
+                <h2>Capacete Infantil para Ciclismo Tyro Trek</h2>
+                <h3>R$ 455,00</h3>
+                <p>ou R$ 432,25 à vista no boleto ou PIX
+                    ou até 12x de R$ 37,90 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('aces4')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 5 -->
+            <div class="product-card">
+                <img src="media/aces5.png" alt="Acessório 5" loading="lazy"><br>
+                <h2>TLR Flash Can Bontrager</h2>
+                <h3>R$ 348,00</h3>
+                <p>ou R$ 330,60 à vista no boleto ou PIX
+                    ou até 6x de R$ 58 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('aces5')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 6 -->
+            <div class="product-card">
+                <img src="media/aces6.png" alt="Acessório 6" loading="lazy"><br>
+                <h2>Ferramenta integrada para MTB BITS Bontrager</h2>
+                <h3>R$ 800,00</h3>
+                <p>ou R$ 760,00 à vista no boleto ou PIX
+                    ou até 12x de R$ 66,66 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('aces6')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 7 -->
+            <div class="product-card">
+                <img src="media/aces7.png" alt="Acessório 7" loading="lazy"><br>
+                <h2>Suporte de Caramanhola Reciclado Trek Elite</h2>
+                <h3>R$ 105,00</h3>
+                <p>ou R$ 99,75 à vista no boleto ou PIX
+                    ou até 6x de R$ 17,50 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('aces7')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Acessório 8 -->
+            <div class="product-card">
+                <img src="media/aces8.png" alt="Acessório 8" loading="lazy"><br>
+                <h2>Bomba de piso para pneus TLR Flash Charger Bontrager</h2>
+                <h3>R$ 1.725</h3>
+                <p>ou R$ 1.638,75 à vista no boleto ou PIX
+                    ou até 12x de R$ 143,75 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart('aces8')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </section> <br><br><br><br><br><br>
+
+    <div class="info-container"></div>
+        <!--informações de pagamento: FORA O CARTÃO DE CRÉDITO-->            
+        <div class="payment-info" data-aos="fade-right"> <!--TODO: ALTERAÇÃO ANIMAÇÃO-->
+            <!--Testando colocar cartao aqui-->
+            <span>
+                
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__logo">MasterCard</div>
+                        <div class="card__chip">
+                            <svg class="card__chip-lines" role="img" width="20px" height="20px" viewBox="0 0 100 100" aria-label="Chip">
+                                <g opacity="0.8">
+                                    <polyline points="0,50 35,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="0,20 20,20 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="50,0 50,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="65,35 80,20 100,20" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="100,50 65,50" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="35,35 65,35 65,65 35,65 35,35" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="0,80 20,80 35,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="50,100 50,65" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                    <polyline points="65,65 80,80 100,80" fill="none" stroke="#000" stroke-width="2"></polyline>
+                                </g>
+                            </svg>
+                            <div class="card__chip-texture"></div>
+                        </div>
+                        <div class="card__type">debit</div>
+                        <div class="card__number">
+                            <span class="card__digit-group">0123</span>
+                            <span class="card__digit-group">4567</span>
+                            <span class="card__digit-group">8901</span>
+                            <span class="card__digit-group">2345</span>
+                        </div>
+                        <div class="card__valid-thru" aria-label="Valid thru">Valid<br>thru</div>
+                        <div class="card__exp-date"><time datetime="2038-01">01/38</time></div>
+                        <div class="card__name" aria-label="Dee Stroyer">Valdemir</div>
+                        <div class="card__vendor" role="img" aria-labelledby="card-vendor">
+                        <span id="card-vendor" class="card__vendor-sr">Mastercard</span>
+                        </div>
+                    <div class="card__texture"></div>
+                            </div>
+                                </div>
+            </span>
+            
+            <!--fim cartao de credito-->
+            <span class="info-text">Até 12x SEM JUROS<span class="info-extra"> No cartão em toda a loja</span></span>
+            <span class="divider">|</span>
+            <span class="info-text">Frete grátis* em diversos produtos<span class="info-extra"> Entregamos em todas as regiões do Brasil</span></span>
+            <span class="divider">|</span>
+            <span class="info-text">5% de desconto em PIX ou Boleto<span class="info-extra"> Em toda a loja</span></span>
+            <span class="divider">|</span>
+            <span class="info-text">Loja confiável <br><span class="info-extra"> com tecnologia 100% segura</span></span>
+        </div>
+    </div> <br><br><br><br><br><br>
+    <!--fim aba de instrução pagamento/frete -->
+    
+
+    <!-- Seção Peças para Bike -->
+    <section id="pecas" class="product-selection" data-aos="fade-up">
+        <h1>Recomendações para sua bike</h1> <br><br>
+        <hr class="linha-horizontal">
+        <br><br><br>
+        
+        <div class="product-grid">
+        
+            <!-- Peça 1 -->
+            <div class="product-card">
+                <img src="media/peca1.png" alt="Peça 1"><br>
+                <h2>Guidão XXX Aero Bontrager</h2>
+                <h3>R$ 2.280,00</h3>
+                <p>ou R$ 2.166 à vista no boleto ou PIX
+                    ou até 12x de R$ 218,75 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 1', price: 150, image: 'media/aces1.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Peça 2 -->
+            <div class="product-card">
+                <img src="media/peca2.png" alt="Peça 2" loading="lazy"><br>
+                <h2>Suporte para caramanhola Speed Concept Bontrager</h2>
+                <h3>R$ 825,00</h3>
+                <p>ou R$ 783,75 à vista no boleto ou PIX
+                    ou até 12x de R$ 68,75 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 2', price: 90, image: 'media/aces2.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Peça 3 -->
+            <div class="product-card">
+                <img src="media/peca3.png" alt="Peça 3" loading="lazy"><br>
+                <h2>Selim Hilo Comp Bontrager</h2>
+                <h3>R$ 830,00</h3>
+                <p>ou R$ 788,50 à vista no boleto ou PIX
+                    ou até 12x de R$ 69,16 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 3', price: 45, image: 'media/aces3.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+
+            <!-- Peça 4 -->
+            <div class="product-card">
+                <img src="media/peca4.png" alt="Peça 4" loading="lazy"><br>
+                <h2>Conjunto de pedais planos Trek Line Elite</h2>
+                <h3>R$ 445,00</h3>
+                <p>ou R$ 422,75 à vista no boleto ou PIX
+                    ou até 6x de R$ 374,16 sem juros</p>
+                <div class="product-actions">
+                    <button class="buy-now">Comprar</button>
+                    <button class="add-to-cart" onclick="addToCart({ name: 'Acessório 4', price: 60, image: 'media/aces4.png' })">Adicionar ao carrinho</button>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </section> <br><br><br><br>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="product-selection" data-aos="fade-up">
+        <!-- Rodapé de Contato -->
+         <footer class="footer">
+             <div class="footer-container">
+                 <div class="footer-logo">
+                     <img src="media/logo2.png" alt="Logo SoftBike" class="footer-logo-img">
+                 </div>
+                 <div>
+                     <h3>Fale Conosco</h3><br>
+                     <p>Entre em contato para tirar dúvidas ou obter mais informações:</p> <br>
+                     <ul class="footer-contact-list">
+                         <li><i class="fas fa-map-marker-alt"></i> Av. Sucesso, 1234 - Brasília, Distrito Federal</li>
+                         <li><i class="fas fa-phone"></i> +55 (11) 98765-4321</li>
+                         <li><i class="fas fa-envelope"></i> contato@softbike.com</li>
+                         <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511987654321" target="_blank">WhatsApp: +55 (11) 98765-4321</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-social">
+                     <h4>Siga-nos</h4>
+                     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                     <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                 </div>
+             </div>
+             <div class="footer-bottom">
+                 <p>&copy; 2024 SoftBike - Todos os direitos reservados.</p>
+             </div>
+         </footer>
+ 
+     </section> 
 
      <!--EFEITOS JAVASCRIPT-->    
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-     <script>
-         AOS.init({
-             duration: 1200,  // Duração da animação em milissegundos
-             once: true,  // Animação acontece uma única vez ao rolar para baixo
-         });
-         const cartBtn = document.querySelector('.cartBtn');
-         const cartSidebar = document.getElementById('cart-sidebar');
-         const closeCart = document.getElementById('close-cart');
-     
-         // Abrir a aba lateral ao clicar no botão de adicionar ao carrinho
-         cartBtn.addEventListener('click', () => {
-             cartSidebar.classList.add('open');
-         });
-     
-         // Fechar a aba lateral ao clicar no botão de fechar
-         closeCart.addEventListener('click', () => {
-             cartSidebar.classList.remove('open');
-         });
- 
-         //TESTE DO MOVIMENTO SMOOTH
-         document.querySelectorAll('.main-menu nav ul li a').forEach(anchor => {
-             anchor.addEventListener('click', function(e) {
-                 e.preventDefault();
-                 const targetId = this.getAttribute('href').substring(1);
-                 const targetSection = document.getElementById(targetId);
-                 if (targetSection) {
-                     window.scrollTo({
-                         top: targetSection.offsetTop,
-                         behavior: 'smooth'
-                     });
-                 }
-             });
-         });
- 
-     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,  // Duração da animação em milissegundos
+            once: true,  // Animação acontece uma única vez ao rolar para baixo
+            delay: 250,  // Atraso de 200ms entre animações
+        });
+        const cartBtn = document.querySelector('.cartBtn');
+        const cartSidebar = document.getElementById('cart-sidebar');
+        const closeCart = document.getElementById('close-cart');
+    
+        // Abrir a aba lateral ao clicar no botão de adicionar ao carrinho
+        cartBtn.addEventListener('click', () => {
+            cartSidebar.classList.add('open');
+        });
+    
+        // Fechar a aba lateral ao clicar no botão de fechar
+        closeCart.addEventListener('click', () => {
+            cartSidebar.classList.remove('open');
+        });
+
+        //TESTE DO MOVIMENTO SMOOTH
+        document.querySelectorAll('.main-menu nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        //
+        window.addEventListener('scroll', function() {
+        const navCard = document.querySelector('.navigation-card2');
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 5) { // Define quando o card deve fixar no topo
+            navCard.classList.add('fixed');
+        } else {
+            navCard.classList.remove('fixed');
+        }
+        });
+    </script>
+
+    <!--pesquisa-->
+    <!-- pesquisa -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const searchInput = document.getElementById('search-input');
+          const searchOverlay = document.getElementById('search-overlay');
+
+          // Mostrar/ocultar a barra de pesquisa
+          document.getElementById('search-trigger').addEventListener('click', function() {
+              searchOverlay.classList.toggle('show');
+              searchInput.focus(); // Focar no campo de pesquisa
+          });
+
+          // Fechar a barra de pesquisa ao clicar fora
+          searchOverlay.addEventListener('click', function(e) {
+              if (e.target === this) {
+                  this.classList.remove('show');
+                  resetProducts(); // Resetar os produtos quando fechar a pesquisa
+              }
+          });
+
+          // Evento para filtrar produtos ao pressionar ENTER
+          searchInput.addEventListener('keyup', function(event) {
+              if (event.key === 'Enter') {
+                  filterProducts(this.value);
+              }
+          });
+
+          // Função para filtrar produtos
+          function filterProducts(query) {
+              const products = document.querySelectorAll('.product-card');
+              products.forEach(product => {
+                  const title = product.querySelector('h2').textContent.toLowerCase();
+                  if (title.includes(query.toLowerCase())) {
+                      product.style.display = 'block'; // Mostrar produto que corresponde à pesquisa
+                  } else {
+                      product.style.display = 'none'; // Ocultar produto que não corresponde
+                  }
+              });
+          }
+
+          // Resetar a visualização dos produtos
+          function resetProducts() {
+              const products = document.querySelectorAll('.product-card');
+              products.forEach(product => {
+                  product.style.display = 'block'; // Mostrar todos os produtos
+              });
+          }
+      });
+    </script>
+
 
 </body>
 </html>
