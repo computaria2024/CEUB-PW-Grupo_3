@@ -13,16 +13,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajuste conforme necessário para o tamanho do fundo */
+    min-height: 100vh; /* Ajuste conforme necessário para o tamanho do fundo */
     gap: 40px; /* Espaçamento entre a imagem e os produtos */
+    overflow-y: hidden;
 
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Define um mínimo de px e ajusta automaticamente */
-    gap: 10px;
-    margin-left: 100px;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas fixas */
+    gap: 20px;
+    justify-content: center; /* Centraliza o grid */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento ao redor */
 }
 
 .product-card {

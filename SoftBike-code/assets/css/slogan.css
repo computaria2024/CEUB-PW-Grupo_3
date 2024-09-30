@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto; /* Mantém a rolagem vertical normal */
+
+
     /*font-family: 'Roboto Condensed', sans-serif;*/
 }
 
@@ -61,6 +65,8 @@
     align-items: center;
     padding: 20px 0;
     position: relative; /* Necessário para o alinhamento do carrinho */
+    overflow-y: hidden;
+
 }
 
 .logo {
@@ -89,6 +95,8 @@
     display: flex;
     justify-content: center; /* Centraliza os itens */
     gap: 10px;
+    overflow-y: hidden;
+
 }
 
 .main-menu nav ul li a {
@@ -97,6 +105,9 @@
     font-size: 1.2em;
     transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
     padding: 10px; /* Adiciona um pouco de espaçamento */
+    overflow-y: hidden;
+
+    
 }
 
 /* Efeito ao passar o mouse */
@@ -104,6 +115,8 @@
   color: #1b3cf7; /* Muda a cor do texto para uma cor de destaque */
   transform: scale(1.1); /* Aumenta levemente o tamanho */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+  overflow-y: hidden;
+
 }
 
 /* Ícone de carrinho no menu */
@@ -210,9 +223,9 @@ html {
 /* Estilos para o carrinho lateral */
 .cart-sidebar {
   position: fixed;
-  right: -300px;
+  right: -320px;
   top: 0;
-  width: 300px;
+  width: 320px;
   height: 100%;
   background-color: #f9f9f9;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
