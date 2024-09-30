@@ -21,16 +21,21 @@
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas fixas */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
+    gap: 50px;
     justify-content: center; /* Centraliza o grid */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 20px; /* Espaçamento ao redor */
+    align-items: stretch;
+    max-width: 1200px; /* Define um limite de largura total */
+
 }
 
 .product-card {
     width: 100%; /* Mantém o tamanho dos cartões flexível dentro da coluna */
     max-width: 400px; /* Limita o tamanho máximo do cartão */
+    height: auto; /* Altura consistente para todos os produtos */
+
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -38,7 +43,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Distribui os elementos verticalmente */
     align-items: center; /* Centraliza verticalmente */
 }
 
@@ -48,9 +53,12 @@
 }
 
 .product-card img {
-    max-width: 90%;
+    max-width: 100%;
+    max-height: 400px; /* Define uma altura máxima para a imagem */
     border-radius: 8px;
+    object-fit: contain; /* Garante que a imagem mantenha suas proporções */
     will-change: transform;
+
 }
 
 .product-card:hover img {

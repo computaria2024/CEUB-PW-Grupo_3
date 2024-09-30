@@ -65,6 +65,7 @@
     align-items: center;
     padding: 20px 0;
     position: relative; /* Necessário para o alinhamento do carrinho */
+    height: auto;
     overflow-y: hidden;
 
 }
