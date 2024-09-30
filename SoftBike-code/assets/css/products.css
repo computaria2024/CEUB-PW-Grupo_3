@@ -22,7 +22,7 @@
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
-    gap: 50px;
+    gap: 100px;
     justify-content: center; /* Centraliza o grid */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 20px; /* Espaçamento ao redor */
@@ -138,17 +138,17 @@
 /* Testando o título diferente para bike */
 .product-selection h1{
     position: relative;
-    width: 100%;
+    width: auto;
     text-align: left; 
-    margin-left: 100px;
+    margin-left: 20%;
     font-size: 4em;
 }
 
 .linha-horizontal{
     width: 11%;
     align-self: center;
-    margin-left: 100px;
-    margin-top: -30px;
+    margin-left: 20%;
+    margin-top: -20px;
     border-top: 2px solid #333;
 }
 
@@ -170,7 +170,7 @@
 width: auto;
 min-width: 120px; /* Define um limite mínimo de largura */
 padding: 8px 16px; /* Reduz o espaçamento interno */
-margin-left: 100px;
+margin-left: 20%;
 
  background-color: transparent;
  border: 2px solid #000;

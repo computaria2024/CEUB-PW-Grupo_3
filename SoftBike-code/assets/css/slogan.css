@@ -8,11 +8,13 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden;
     overflow-y: auto; /* Mantém a rolagem vertical normal */
-
-
     /*font-family: 'Roboto Condensed', sans-serif;*/
 }
 
+.header{
+  overflow-y: hidden;
+
+}
 /* Menu de redes sociais */
 .social-menu {
     display: flex;
@@ -108,7 +110,11 @@
     padding: 10px; /* Adiciona um pouco de espaçamento */
     overflow-y: hidden;
 
-    
+}
+
+.main-menu li{
+  overflow-y: hidden; /*resolvendo problema de rodagem*/
+
 }
 
 /* Efeito ao passar o mouse */
@@ -233,6 +239,8 @@ html {
   transition: right 0.3s ease;
   padding: 20px;
   z-index: 1000;
+  overflow-y: hidden;
+  
 }
 
 .cart-sidebar.open {
@@ -273,6 +281,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-y: hidden;
 }
 
 .hero-text h1 {
@@ -285,6 +294,8 @@ html {
                  4px -4px 8px rgba(0, 0, 0, 0.7), 
                  -4px 4px 8px rgba(0, 0, 0, 0.7);
     z-index: 1; /* Garante que o texto fique acima do fundo */
+    overflow-y: hidden;
+
 }
 
 
@@ -354,6 +365,8 @@ html {
 .card__logo {
   font-weight: bold;
   font-style: italic;
+  overflow-y: hidden;
+
 }
 
 .card__chip {
@@ -377,6 +390,8 @@ html {
 .card__type {
   align-self: flex-end;
   margin-left: auto;
+  overflow-y: hidden;
+
 }
 
 .card__digit-group,
@@ -521,7 +536,8 @@ html {
   50% {
     transform: translate3d(-50%,0,0);
   }
-}                
+}
+
 /* Informações de pagamento */
 .info-container {
   display: flex;
@@ -532,6 +548,8 @@ html {
   text-align: center;
   margin: 0 auto; /* Centraliza o container na página */
   width: 100%; /* Garante que o container ocupe toda a largura */
+  overflow-y: hidden;
+
 }
 
 .card-info {
