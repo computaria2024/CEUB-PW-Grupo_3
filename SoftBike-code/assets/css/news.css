@@ -459,7 +459,6 @@ color: #ccc;
   display: flex;
   align-items: stretch; /* Alinha as colunas para ter a mesma altura */
   background-color: #e0f7fa; /* Azul claro pastel */
-
   gap: 30px; /* Espaço entre as colunas */
 }
 
@@ -471,6 +470,8 @@ color: #ccc;
   line-height: 1.6;
   color: #333;
   margin-left: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sobre-video {
