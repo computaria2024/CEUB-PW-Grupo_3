@@ -295,7 +295,7 @@ margin-left: 20%;
   
   .brands-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 40px;
     justify-content: center;
     align-items: center;
@@ -307,7 +307,7 @@ margin-left: 20%;
     border-radius: 20px;
     padding: 20px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -337,7 +337,7 @@ margin-left: 20%;
     }
   
     .brand-card img {
-      max-width: 90%;
+      max-width: 80%;
     }
   }
   
@@ -383,8 +383,6 @@ margin-left: 20%;
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-
-  margin-left: 43%;
 }
 
 .content-curiosidade {
@@ -392,7 +390,7 @@ margin-left: 20%;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  color: #e8e8e8;
+  color: #b7b7b7;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 

@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, #1e0bf7, #563af9, #6A82FB, #8e6afb, #c799fd, #ffc9ff, #fcafbf);
+    background: linear-gradient(to bottom right, #1f0bf7a4, #3ac9f9a4, #6acbfbaa, #6afb6c94);
     justify-content: center; /* Centraliza o conteúdo verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
   }

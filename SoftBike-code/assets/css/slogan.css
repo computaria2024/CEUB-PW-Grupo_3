@@ -68,8 +68,6 @@
     padding: 20px 0;
     position: relative; /* Necessário para o alinhamento do carrinho */
     height: auto;
-    overflow-y: hidden;
-
 }
 
 .logo {
@@ -98,8 +96,6 @@
     display: flex;
     justify-content: center; /* Centraliza os itens */
     gap: 10px;
-    overflow-y: hidden;
-
 }
 
 .main-menu nav ul li a {
@@ -108,13 +104,10 @@
     font-size: 1.2em;
     transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover */
     padding: 10px; /* Adiciona um pouco de espaçamento */
-    overflow-y: hidden;
-
 }
 
 .main-menu li{
   overflow-y: hidden; /*resolvendo problema de rodagem*/
-
 }
 
 /* Efeito ao passar o mouse */
@@ -402,12 +395,16 @@ html {
   -webkit-text-fill-color: transparent;
   font-family: "Courier Prime", monospace;
   filter: drop-shadow(0 0.05rem hsla(0,0%,0%,0.3));
+  overflow-y: hidden;
+
 }
 
 .card__number {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
+  overflow-y: hidden;
+
 }
 
 .card__valid-thru,
